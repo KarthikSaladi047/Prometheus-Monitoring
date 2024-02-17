@@ -2,8 +2,7 @@
 
 Monitoring and alerting are like the guardians of your digital realm, ensuring the health, performance, and reliability of your systems. In the vast landscape of technology, where systems are dynamic and complexities abound, the need for vigilant oversight has never been more crucial. This is where monitoring and alerting step in as the unsung heroes of digital operations.
 
-![image](https://github.com/KarthikSaladi047/Monitoring-Prometheus-Grafana/assets/105864615/9bd52ab0-c83f-4967-a1cd-c0964bb71b3b)
-
+![303099163-9bd52ab0-c83f-4967-a1cd-c0964bb71b3b](https://github.com/KarthikSaladi047/Prometheus-Monitoring/assets/105864615/36df7b71-f5ab-4858-bd70-ddf8fb108140)
 
 ### Monitoring:🔎
 Imagine, your digital infrastructure as a living organism. Monitoring is the constant watchful eye that observes every heartbeat and pulse. It tracks performance metrics, system resource utilization, and the overall well-being of your applications and services. By collecting and analyzing data in real time, monitoring provides a comprehensive view of your system's health.
@@ -25,7 +24,8 @@ In summary, monitoring and alerting empower you to maintain reliable, stable ser
 
 ---
 ## 🔭 Prometheus Architecture
-  ![0_stU0_9QN3L5H5AnH](https://github.com/KarthikSaladi047/Monitoring-Prometheus-Grafana/assets/105864615/42846201-54e4-4090-943f-b88fb78fbfb3)
+
+![303097014-42846201-54e4-4090-943f-b88fb78fbfb3](https://github.com/KarthikSaladi047/Prometheus-Monitoring/assets/105864615/e0ea86bb-595a-4a14-9cb1-95015fe8530a)
 
 The major component of the Prometheus is the Prometheus server.
 
@@ -63,7 +63,7 @@ The primary objective of this project is to develop a comprehensive monitoring a
 - **Blackbox Exporter:** The blackbox exporter allows the probing of endpoints over HTTP, HTTPS, DNS, TCP, ICMP, and gRPC. It provides metrics about latencies for HTTP requests and DNS as well as statistics about SSL certificate expiration.
 - **Push Gateway:** The Pushgateway exists to allow ephemeral and batch jobs to expose their metrics to Prometheus.
 
-![Prometheus Project](https://github.com/KarthikSaladi047/Monitoring-Prometheus-Grafana/assets/105864615/87d6d819-8e58-415c-8527-9e2fb6f4aeb1)
+![303105394-87d6d819-8e58-415c-8527-9e2fb6f4aeb1](https://github.com/KarthikSaladi047/Prometheus-Monitoring/assets/105864615/f8775486-478e-4bda-a270-a9a9e398505d)
 
 Start monitoring your systems today and stay ahead of potential issues with the Monitoring and Alerting System!
 
@@ -87,7 +87,7 @@ That's it! You now have a VM set up on Virtualbox.
 
 Once the VM is up and running, you can access it by ssh into the VM.
 
-![image](https://github.com/KarthikSaladi047/Monitoring-Prometheus-Grafana/assets/105864615/eee45ef9-f67c-449a-88ed-4b35a1c4b4de)
+![302129631-eee45ef9-f67c-449a-88ed-4b35a1c4b4de](https://github.com/KarthikSaladi047/Prometheus-Monitoring/assets/105864615/1ea92d36-0a03-4877-8d0c-5844cd501f8b)
 
 ---
 
@@ -209,11 +209,11 @@ sudo systemctl enable prometheus
 ```
 sudo systemctl status prometheus
 ```
-![Screenshot 2024-02-05 at 1 46 05 AM](https://github.com/KarthikSaladi047/Monitoring-Prometheus-Grafana/assets/105864615/bfd0aa92-311e-4d0d-bc0b-0a1c3860e8f0)
+![302131300-bfd0aa92-311e-4d0d-bc0b-0a1c3860e8f0](https://github.com/KarthikSaladi047/Prometheus-Monitoring/assets/105864615/a7224c1e-c275-4953-b77d-6348fb8d1147)
 
 - Open your web browser and navigate to http://localhost:9090. You should see the Prometheus web interface. We can use the query interface to check if metrics from our application are being scraped successfully.
-
-![Screenshot 2024-02-05 at 1 43 44 AM](https://github.com/KarthikSaladi047/Monitoring-Prometheus-Grafana/assets/105864615/8a1892c6-16d1-4033-bf4c-91673eead38b)
+  
+![302131177-8a1892c6-16d1-4033-bf4c-91673eead38b](https://github.com/KarthikSaladi047/Prometheus-Monitoring/assets/105864615/1acaf774-b9a6-4cea-8be6-f1095163388d)
 
 ---
 
@@ -255,11 +255,11 @@ sudo systemctl enable grafana-server.service
 ```
 sudo systemctl status grafana-server
 ```
-![image](https://github.com/KarthikSaladi047/Monitoring-Prometheus-Grafana/assets/105864615/2c34b909-7581-49c3-9b39-b06114f37e03)
+![302130944-2c34b909-7581-49c3-9b39-b06114f37e03](https://github.com/KarthikSaladi047/Prometheus-Monitoring/assets/105864615/d80283c9-ec26-4d53-a99f-135b727ed581)
 
 - you can access the Grafana web interface by navigating to http://localhost:3000 in your browser.
 
-![image](https://github.com/KarthikSaladi047/Monitoring-Prometheus-Grafana/assets/105864615/fc769d92-c100-4c11-97b1-dee5089ab627)
+![302131333-fc769d92-c100-4c11-97b1-dee5089ab627](https://github.com/KarthikSaladi047/Prometheus-Monitoring/assets/105864615/95ce05dc-b81b-4cba-834e-1dda1e990edd)
 
 ### Step 4: Connect Grafana to Prometheus:
 
@@ -273,7 +273,7 @@ sudo systemctl status grafana-server
 - In the HTTP section, set the URL to http://localhost:9090 (assuming Prometheus is running on the same VM).
 - Scroll down and click "Save & Test" to verify the connection.
 
-![Screenshot 2024-02-05 at 1 54 27 AM](https://github.com/KarthikSaladi047/Monitoring-Prometheus-Grafana/assets/105864615/0f41c65e-40ca-4bad-a6d7-7c87e35238d7)
+![302131655-0f41c65e-40ca-4bad-a6d7-7c87e35238d7](https://github.com/KarthikSaladi047/Prometheus-Monitoring/assets/105864615/9a533c2f-9953-46ee-992f-f03a2eafa50a)
 
 Grafana is now connected to Prometheus as a data source.
 
@@ -309,7 +309,7 @@ In Grafana, click on the "Dashboards" in the left sidebar Menu and then click on
 - Click on the save icon in the top menu to save your dashboard.
 - Give it a meaningful name.
 
-![image](https://github.com/KarthikSaladi047/Monitoring-Prometheus-Grafana/assets/105864615/81106dd2-3922-4ee2-9663-1f846a4da8f7)
+![302138271-81106dd2-3922-4ee2-9663-1f846a4da8f7](https://github.com/KarthikSaladi047/Prometheus-Monitoring/assets/105864615/94fa8673-df95-4684-89c8-4512f958eeb8)
 
 ### Step 4: View and Share:
 
@@ -409,15 +409,15 @@ sudo systemctl restart prometheus
 ```
 sudo systemctl status node_exporter
 ```
-![image](https://github.com/KarthikSaladi047/Monitoring-Prometheus-Grafana/assets/105864615/1214f8dc-29f8-476e-9485-56b63637597a)
+![302139891-1214f8dc-29f8-476e-9485-56b63637597a](https://github.com/KarthikSaladi047/Prometheus-Monitoring/assets/105864615/b4054175-37b5-4a31-8f66-c1cbd4d277fb)
 
 - Open your web browser and navigate to http://localhost:9100/metrics. You should see the Node Exporter web interface logging the metrics.
 
-![image](https://github.com/KarthikSaladi047/Monitoring-Prometheus-Grafana/assets/105864615/e130fd11-a4dc-4c7e-ba94-de528e45102a)
+![302139923-e130fd11-a4dc-4c7e-ba94-de528e45102a](https://github.com/KarthikSaladi047/Prometheus-Monitoring/assets/105864615/6348f76a-4a3f-4981-8d63-5a5ef04796a5)
 
-- Now we can see the node related metrics in Prometheus.
+- Now we can see the node metrics in Prometheus.
 
-![Screenshot 2024-02-11 at 2 12 44 AM](https://github.com/KarthikSaladi047/Monitoring-Prometheus-Grafana/assets/105864615/8375f4c1-2354-4b55-b8cb-55ec3f783ea7)
+![303863980-8375f4c1-2354-4b55-b8cb-55ec3f783ea7](https://github.com/KarthikSaladi047/Prometheus-Monitoring/assets/105864615/06abfa86-a5e8-42cf-b055-983f38a2046f)
 
 ---
 
@@ -502,11 +502,11 @@ sudo systemctl start alertmanager
 ```
 sudo systemctl status alertmanager
 ```
-![image](https://github.com/KarthikSaladi047/Monitoring-Prometheus-Grafana/assets/105864615/ec395c3d-c88a-4834-8099-c6055ad7c134)
+![302143739-ec395c3d-c88a-4834-8099-c6055ad7c134](https://github.com/KarthikSaladi047/Prometheus-Monitoring/assets/105864615/f6c8b219-c5d6-47ec-b12b-a3e0485760d8)
 
 - Open your web browser and navigate to http://localhost:9093. You should see the Alert Manager web interface.
 
-![image](https://github.com/KarthikSaladi047/Monitoring-Prometheus-Grafana/assets/105864615/d8e851e1-83e8-4718-b325-0848c9be084b)
+![302143780-d8e851e1-83e8-4718-b325-0848c9be084b](https://github.com/KarthikSaladi047/Prometheus-Monitoring/assets/105864615/8f86b0d1-da04-4284-a9d4-92e9e8ec8abc)
 
 ### Step 4: Define Alerting Rules:
 
@@ -604,15 +604,15 @@ Refer: https://pkgs.org/download/stress
 
 - Access the Prometheus web interface at http://localhost:9090 and You should see active alerts and their status.
 
-![image](https://github.com/KarthikSaladi047/Monitoring-Prometheus-Grafana/assets/105864615/3f68a58a-5a0a-4683-ae96-d9b7545b6610)
+![302149774-3f68a58a-5a0a-4683-ae96-d9b7545b6610](https://github.com/KarthikSaladi047/Prometheus-Monitoring/assets/105864615/415a39af-e2a2-46b4-956c-c72c2c4f5fe4)
 
 - Access the Alertmanager interface at http://localhost:9093 and You should see active alerts and their status.
 
-![image](https://github.com/KarthikSaladi047/Monitoring-Prometheus-Grafana/assets/105864615/70c9b977-8bea-4bb1-9717-ca24a302f7a9)
+![302149838-70c9b977-8bea-4bb1-9717-ca24a302f7a9](https://github.com/KarthikSaladi047/Prometheus-Monitoring/assets/105864615/ef635847-19a1-43a3-ac81-cdc8b501ef77)
 
 - Access the Grafana at http://localhost:3000 and You should see spike in the CPU Usage panel.( for PromQL Query `100 - (avg(irate(node_cpu_seconds_total{mode="idle"}[5m])) * 100)` )
   
-![image](https://github.com/KarthikSaladi047/Monitoring-Prometheus-Grafana/assets/105864615/7acbd01b-5b66-4ef1-9046-64a2de0b2006)
+![302149748-7acbd01b-5b66-4ef1-9046-64a2de0b2006](https://github.com/KarthikSaladi047/Prometheus-Monitoring/assets/105864615/129f6e6d-fc45-49b5-9b7c-eae2a966b67b)
 
 
 ---
@@ -682,15 +682,15 @@ sudo systemctl restart prometheus
 
 - Check if the Docker is publishing its metrics on port 9323. Navigate to localhost:9323/metrics
   
-![Screenshot 2024-02-10 at 9 00 56 PM](https://github.com/KarthikSaladi047/Monitoring-Prometheus-Grafana/assets/105864615/0ae464a5-1714-459b-b93f-b7d5357a853f)
+![303845529-0ae464a5-1714-459b-b93f-b7d5357a853f](https://github.com/KarthikSaladi047/Prometheus-Monitoring/assets/105864615/0e317312-5fd5-499e-8081-6df6f4114185)
 
 - Check the metrics in the Prometheus UI
 
-![image](https://github.com/KarthikSaladi047/Monitoring-Prometheus-Grafana/assets/105864615/41b765ae-d5b4-480c-8ea1-bcd5903d905e)
+![303845488-41b765ae-d5b4-480c-8ea1-bcd5903d905e](https://github.com/KarthikSaladi047/Prometheus-Monitoring/assets/105864615/6addac07-8d60-472a-86da-0eea504fd940)
 
 - Also check Prometheus targets
   
-![Screenshot 2024-02-10 at 8 59 38 PM](https://github.com/KarthikSaladi047/Monitoring-Prometheus-Grafana/assets/105864615/d96c6d9a-f72d-4bea-9bd2-198f0fda727d)
+![303845442-d96c6d9a-f72d-4bea-9bd2-198f0fda727d](https://github.com/KarthikSaladi047/Prometheus-Monitoring/assets/105864615/538ea5cf-c139-415e-b2cb-b5c7158cb331)
 
 ---
 
@@ -865,11 +865,11 @@ sudo systemctl restart prometheus
 ```
 sudo systemctl status blackbox
 ```
-![image](https://github.com/KarthikSaladi047/Monitoring-Prometheus-Grafana/assets/105864615/8d72a045-5693-433c-a325-1f9715c867a8)
+![303856959-8d72a045-5693-433c-a325-1f9715c867a8](https://github.com/KarthikSaladi047/Prometheus-Monitoring/assets/105864615/67fbdad2-9cfc-425b-bbe1-8898815d2500)
 
 - Open your web browser and navigate to http://localhost:9114. You should see the Blackbox Exporter web interface showing recent probes.
   
-![image](https://github.com/KarthikSaladi047/Monitoring-Prometheus-Grafana/assets/105864615/847de848-6a64-46ea-a680-4afdc06c88d2)
+![303856763-847de848-6a64-46ea-a680-4afdc06c88d2](https://github.com/KarthikSaladi047/Prometheus-Monitoring/assets/105864615/8412f0f3-c384-4e4a-8ba9-7bb2bd23a2e8)
 
 ---
 
@@ -1014,11 +1014,11 @@ sudo systemctl restart prometheus
 ```
 sudo systemctl status pushgateway
 ```
-![image](https://github.com/KarthikSaladi047/Monitoring-Prometheus-Grafana/assets/105864615/d125049f-b241-4ecd-8252-3ecb1fe2bd1b)
+![303860474-d125049f-b241-4ecd-8252-3ecb1fe2bd1b](https://github.com/KarthikSaladi047/Prometheus-Monitoring/assets/105864615/312b530b-0447-4d0d-ad92-0d9abf600a00)
 
 - Open your web browser and navigate to http://localhost:9114. You should see the Push Gateway web interface.
-
-![image](https://github.com/KarthikSaladi047/Monitoring-Prometheus-Grafana/assets/105864615/d10261e0-9ab5-4b74-a5c3-3ad940d8e875)
+  
+![303860927-d10261e0-9ab5-4b74-a5c3-3ad940d8e875](https://github.com/KarthikSaladi047/Prometheus-Monitoring/assets/105864615/93a7cbfc-9e44-4662-875e-f47f24683c26)
 
 ### Step 5: Register metrics to Push Gateway:
 
@@ -1052,11 +1052,11 @@ crontab -e
 
 - Open your web browser and navigate to http://localhost:9114. In the Push Gateway web interface, you should see the Metrics that are pushed by the Python script.
 
-![Screenshot 2024-02-11 at 1 56 54 AM](https://github.com/KarthikSaladi047/Monitoring-Prometheus-Grafana/assets/105864615/b371d178-3392-45e7-b120-2acaef9ddf78)
+![303863385-b371d178-3392-45e7-b120-2acaef9ddf78](https://github.com/KarthikSaladi047/Prometheus-Monitoring/assets/105864615/b7cbc1eb-f7c4-4102-ba4c-a751fd69a461)
 
 - We can also see the metrics available in Prometheus.
   
-![image](https://github.com/KarthikSaladi047/Monitoring-Prometheus-Grafana/assets/105864615/f97b0f51-2c97-4459-a963-dc6cb7ab18bb)
+![303863517-f97b0f51-2c97-4459-a963-dc6cb7ab18bb](https://github.com/KarthikSaladi047/Prometheus-Monitoring/assets/105864615/f8ecdbc2-ac29-4aa4-a54a-be3bd81f6953)
 
 ## 🔟 Service Discovery:
 
@@ -1143,7 +1143,7 @@ sudo systemctl restart prometheus
 ```
 - Until we add a target in the targets.json file, we won't see the service_discovery target in the Prometheus UI.
 
-![image](https://github.com/KarthikSaladi047/Monitoring-Prometheus-Grafana/assets/105864615/de7f527a-45a9-4c94-b3fd-31942e6c40bc)
+![303865469-de7f527a-45a9-4c94-b3fd-31942e6c40bc](https://github.com/KarthikSaladi047/Prometheus-Monitoring/assets/105864615/9b2536fd-89b4-4f24-ac03-58b8a7a881c8)
 
 ### Step 2: Adding Targets Dynamically:
 
@@ -1164,7 +1164,7 @@ vim /etc/prometheus/targets.json
 ```
 - Prometheus automatically reloads the targets.json file periodically (by default every 5 minutes), so changes take effect without needing a manual restart of any service.
   
-![image](https://github.com/KarthikSaladi047/Monitoring-Prometheus-Grafana/assets/105864615/3a87e280-29ca-49da-999a-d50f4b3f7759)
+![303865731-3a87e280-29ca-49da-999a-d50f4b3f7759](https://github.com/KarthikSaladi047/Prometheus-Monitoring/assets/105864615/673d27ed-4766-4968-bbae-0e2f2c626945)
 
 - Add one more target.
 ```
@@ -1191,7 +1191,7 @@ vim /etc/prometheus/targets.json
 ```
 - Now you can see 2 Endpoints under the service_discovery target.
 
-![image](https://github.com/KarthikSaladi047/Monitoring-Prometheus-Grafana/assets/105864615/ca802eb9-380f-420d-ac4e-74d4e11dc69b)
+![303865885-ca802eb9-380f-420d-ac4e-74d4e11dc69b](https://github.com/KarthikSaladi047/Prometheus-Monitoring/assets/105864615/e8c2d833-e077-4c9a-8e50-946cc2efa7a5)
 
 Note: Mostly Ansible is used to generate the target JSON/YAML files that contain the list of VMs & Services that are scrapping targets for Prometheus. So that Prometheus will take targets from that file dynamically. 
 
@@ -1211,4 +1211,3 @@ Best regards,
 
 **Karthik Saladi**
 
-![image](https://github.com/KarthikSaladi047/Monitoring-Prometheus-Grafana/assets/105864615/34d2af93-19cf-4a8e-951f-50502339f612)
