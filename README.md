@@ -1016,7 +1016,7 @@ sudo systemctl status pushgateway
 ```
 ![303860474-d125049f-b241-4ecd-8252-3ecb1fe2bd1b](https://github.com/KarthikSaladi047/Prometheus-Monitoring/assets/105864615/312b530b-0447-4d0d-ad92-0d9abf600a00)
 
-- Open your web browser and navigate to http://localhost:9114. You should see the Push Gateway web interface.
+- Open your web browser and navigate to http://localhost:9091. You should see the Push Gateway web interface.
   
 ![303860927-d10261e0-9ab5-4b74-a5c3-3ad940d8e875](https://github.com/KarthikSaladi047/Prometheus-Monitoring/assets/105864615/93a7cbfc-9e44-4662-875e-f47f24683c26)
 
