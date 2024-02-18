@@ -867,7 +867,7 @@ sudo systemctl status blackbox
 ```
 ![303856959-8d72a045-5693-433c-a325-1f9715c867a8](https://github.com/KarthikSaladi047/Prometheus-Monitoring/assets/105864615/67fbdad2-9cfc-425b-bbe1-8898815d2500)
 
-- Open your web browser and navigate to http://localhost:9114. You should see the Blackbox Exporter web interface showing recent probes.
+- Open your web browser and navigate to http://localhost:9115. You should see the Blackbox Exporter web interface showing recent probes.
   
 ![303856763-847de848-6a64-46ea-a680-4afdc06c88d2](https://github.com/KarthikSaladi047/Prometheus-Monitoring/assets/105864615/8412f0f3-c384-4e4a-8ba9-7bb2bd23a2e8)
 
